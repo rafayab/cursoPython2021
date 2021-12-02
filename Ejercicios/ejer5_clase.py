@@ -6,7 +6,7 @@ class Empleado:
 
 class Aptitudes(Empleado):
     def __init__(self, nombre, apellido, dni, lenguaje, so, idiomas):
-        Empleado().__init__(self, nombre, apellido, dni)
+        super().__init__(nombre, apellido, dni)
         self.lenguaje = lenguaje
         self.so = so
         self.idiomas = idiomas
